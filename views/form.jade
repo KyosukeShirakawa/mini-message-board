@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Form
+  form(method="post" action="/new")
+    span Author:
+    input(type="text" name="author")
+    span Message: 
+    input(type="textarea" name="message") 
+    button(type="submit") Submit
